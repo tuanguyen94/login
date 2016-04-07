@@ -1,0 +1,167 @@
+#!/usr/bin/env node
+
+/**
+ * Module dependencies.
+ */
+
+var app = require('../app');
+var debug = require('debug')('login:server');
+var http = require('http');
+var session = require('express-session');
+var SessionID_SID_Ctrl = require('../controller/sessionID_SID_Controller');
+
+/**
+ * Get port from environment and store in Express.
+ */
+
+var port = normalizePort(process.env.PORT || '3000');
+app.set('port', port);
+
+/**
+ * Create HTTP server.
+ */
+
+var server = http.createServer(app);
+var io = require("socket.io").listen(server);       //
+/**
+ * Listen on provided port, on all network interfaces.
+ */
+//drop collection sessionID - SID before start server
+SessionID_SID_Ctrl.dropTable();
+
+
+server.listen(port);
+server.on('error', onError);
+server.on('listening', onListening);
+
+/**
+ * Normalize a port into a number, string, or false.
+ */
+
+function normalizePort(val) {
+  var port = parseInt(val, 10);
+
+  if (isNaN(port)) {
+    // named pipe
+    return val;
+  }
+
+  if (port >= 0) {
+    // port number
+    return port;
+  }
+
+  return false;
+}
+
+/**
+ * Event listener for HTTP server "error" event.
+ */
+
+function onError(error) {
+  if (error.syscall !== 'listen') {
+    throw error;
+  }
+
+  var bind = typeof port === 'string'
+    ? 'Pipe ' + port
+    : 'Port ' + port;
+
+  // handle specific listen errors with friendly messages
+  switch (error.code) {
+    case 'EACCES':
+      console.error(bind + ' requires elevated privileges');
+      process.exit(1);
+      break;
+    case 'EADDRINUSE':
+      console.error(bind + ' is already in use');
+      process.exit(1);
+      break;
+    default:
+      throw error;
+  }
+}
+
+/**
+ * Event listener for HTTP server "listening" event.
+ */
+
+function onListening() {
+  var addr = server.address();
+  var bind = typeof addr === 'string'
+    ? 'pipe ' + addr
+    : 'port ' + addr.port;
+  debug('Listening on ' + bind);
+}
+////global array user
+
+
+////handle socket.io event
+function getCookie(cname,cookie) {
+  var name = cname + "=";
+  var ca = cookie.split(';');
+  for(var i=0; i<ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0)==' ') c = c.substring(1);
+    if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
+  }
+  return "";
+}
+function getSessionID(cookie){
+  var connectData = getCookie("connect.sid",cookie);
+  var tmp = connectData.split(".")[0];
+  return tmp.slice(4);
+}
+
+var run = function (socket) {
+
+  socket.on('NewConnect', function (data) {
+    //data is session of socket connect
+    //add to table sessionID - SID
+    console.log(getSessionID(data));
+    console.log("new socket: "+ socket.client.id);
+    if(data.length){
+      SessionID_SID_Ctrl.addConnection(getSessionID(data),socket.client.id);
+    }
+
+  });
+  socket.on('CloseConnect', function (data) {
+    //data is session of socket connect
+    //find socketID
+    //remove from table sessionID-SID
+    console.log(getSessionID(data));
+    console.log("socket closed: "+ socket.client.id);
+    if(data.length) {
+      SessionID_SID_Ctrl.removeConnection(socket.client.id);
+    }
+  });
+  socket.on('disconnect', function(){
+    //find socketID
+    //remove from table sessionID-SID
+    console.log("socket disconnect: "+ socket.client.id);
+    SessionID_SID_Ctrl.removeConnection(socket.client.id);
+  });
+};
+
+
+io.sockets.on('connection',run);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

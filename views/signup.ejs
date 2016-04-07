@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SignUp</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="http://127.0.0.1:3000/socket.io/socket.io.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="/javascripts/connect.js"></script>
+</head>
+<body>
+<h1>Hi Baby</h1>
+<p>Let's join with us</p>
+<form method="post" action="/users/signup">
+    Username:<br>
+    <input type="text" name="username" required><br>
+    Password:<br>
+    <input type="text" name="password" required><br>
+    Email:<br>
+    <input type="text" name="email"><br>
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>

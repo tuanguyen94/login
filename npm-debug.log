@@ -1,0 +1,574 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'bcrypt' ]
+2 info using npm@2.14.12
+3 info using node@v4.3.1
+4 verbose install initial load of D:\GoogleDrive\Primary\PROJECT\NodeJs\login\package.json
+5 verbose installManyTop reading scoped package data from D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\body-parser\package.json
+6 verbose installManyTop reading scoped package data from D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\connect-mongo\package.json
+7 verbose installManyTop reading scoped package data from D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\cookie-parser\package.json
+8 verbose installManyTop reading scoped package data from D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\debug\package.json
+9 verbose installManyTop reading scoped package data from D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\ejs\package.json
+10 verbose installManyTop reading scoped package data from D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\express\package.json
+11 verbose installManyTop reading scoped package data from D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\express-session\package.json
+12 verbose installManyTop reading scoped package data from D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\mongoose\package.json
+13 verbose installManyTop reading scoped package data from D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\morgan\package.json
+14 verbose installManyTop reading scoped package data from D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\passport\package.json
+15 verbose installManyTop reading scoped package data from D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\passport-local\package.json
+16 verbose installManyTop reading scoped package data from D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\serve-favicon\package.json
+17 verbose installManyTop reading scoped package data from D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\socket.io\package.json
+18 info package.json passport-local@1.0.0 No license field.
+19 verbose readDependencies loading dependencies from D:\GoogleDrive\Primary\PROJECT\NodeJs\login\package.json
+20 silly cache add args [ 'bcrypt@0.8.5', null ]
+21 verbose cache add spec bcrypt@0.8.5
+22 silly cache add parsed spec Result {
+22 silly cache add   raw: 'bcrypt@0.8.5',
+22 silly cache add   scope: null,
+22 silly cache add   name: 'bcrypt',
+22 silly cache add   rawSpec: '0.8.5',
+22 silly cache add   spec: '0.8.5',
+22 silly cache add   type: 'version' }
+23 silly addNamed bcrypt@0.8.5
+24 verbose addNamed "0.8.5" is a plain semver version for bcrypt
+25 silly mapToRegistry name bcrypt
+26 silly mapToRegistry using default registry
+27 silly mapToRegistry registry https://registry.npmjs.org/
+28 silly mapToRegistry uri https://registry.npmjs.org/bcrypt
+29 verbose addNameVersion registry:https://registry.npmjs.org/bcrypt not in flight; fetching
+30 verbose request uri https://registry.npmjs.org/bcrypt
+31 verbose request no auth needed
+32 info attempt registry request try #1 at 3:55:26 PM
+33 verbose request id 133ef2146c93fcb3
+34 verbose etag "4DL2KVR8GU02L3AXLD33PQXUW"
+35 http request GET https://registry.npmjs.org/bcrypt
+36 http 304 https://registry.npmjs.org/bcrypt
+37 verbose headers { date: 'Wed, 06 Apr 2016 08:55:24 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   etag: '"4DL2KVR8GU02L3AXLD33PQXUW"',
+37 verbose headers   age: '86',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-sjc3635-SJC',
+37 verbose headers   'x-cache': 'HIT',
+37 verbose headers   'x-cache-hits': '1',
+37 verbose headers   'x-timer': 'S1459932924.149337,VS0,VE0',
+37 verbose headers   vary: 'Accept-Encoding' }
+38 silly get cb [ 304,
+38 silly get   { date: 'Wed, 06 Apr 2016 08:55:24 GMT',
+38 silly get     via: '1.1 varnish',
+38 silly get     'cache-control': 'max-age=300',
+38 silly get     etag: '"4DL2KVR8GU02L3AXLD33PQXUW"',
+38 silly get     age: '86',
+38 silly get     connection: 'keep-alive',
+38 silly get     'x-served-by': 'cache-sjc3635-SJC',
+38 silly get     'x-cache': 'HIT',
+38 silly get     'x-cache-hits': '1',
+38 silly get     'x-timer': 'S1459932924.149337,VS0,VE0',
+38 silly get     vary: 'Accept-Encoding' } ]
+39 verbose etag https://registry.npmjs.org/bcrypt from cache
+40 verbose get saving bcrypt to C:\Users\Tuan\AppData\Roaming\npm-cache\registry.npmjs.org\bcrypt\.cache.json
+41 silly cache afterAdd bcrypt@0.8.5
+42 verbose afterAdd C:\Users\Tuan\AppData\Roaming\npm-cache\bcrypt\0.8.5\package\package.json not in flight; writing
+43 verbose afterAdd C:\Users\Tuan\AppData\Roaming\npm-cache\bcrypt\0.8.5\package\package.json written
+44 silly install resolved [ { name: 'bcrypt',
+44 silly install resolved     description: 'A bcrypt library for NodeJS.',
+44 silly install resolved     keywords:
+44 silly install resolved      [ 'bcrypt',
+44 silly install resolved        'password',
+44 silly install resolved        'auth',
+44 silly install resolved        'authentication',
+44 silly install resolved        'encryption',
+44 silly install resolved        'crypt',
+44 silly install resolved        'crypto' ],
+44 silly install resolved     main: './bcrypt',
+44 silly install resolved     version: '0.8.5',
+44 silly install resolved     author: { name: 'Nick Campbell', url: 'https://github.com/ncb000gt' },
+44 silly install resolved     engines: { node: '>= 0.6.0' },
+44 silly install resolved     repository:
+44 silly install resolved      { type: 'git',
+44 silly install resolved        url: 'git+https://github.com/ncb000gt/node.bcrypt.js.git' },
+44 silly install resolved     license: 'MIT',
+44 silly install resolved     bugs: { url: 'https://github.com/ncb000gt/node.bcrypt.js/issues' },
+44 silly install resolved     scripts:
+44 silly install resolved      { test: 'node-gyp configure build && nodeunit test',
+44 silly install resolved        install: 'node-gyp rebuild' },
+44 silly install resolved     dependencies: { bindings: '1.2.1', nan: '2.0.5' },
+44 silly install resolved     devDependencies: { nodeunit: '~0.9.1' },
+44 silly install resolved     contributors:
+44 silly install resolved      [ [Object],
+44 silly install resolved        [Object],
+44 silly install resolved        [Object],
+44 silly install resolved        [Object],
+44 silly install resolved        [Object],
+44 silly install resolved        [Object],
+44 silly install resolved        [Object],
+44 silly install resolved        [Object],
+44 silly install resolved        [Object],
+44 silly install resolved        [Object],
+44 silly install resolved        [Object],
+44 silly install resolved        [Object],
+44 silly install resolved        [Object],
+44 silly install resolved        [Object] ],
+44 silly install resolved     gypfile: true,
+44 silly install resolved     gitHead: '5d97708f06754d7d7989c67ba867002d10013615',
+44 silly install resolved     homepage: 'https://github.com/ncb000gt/node.bcrypt.js#readme',
+44 silly install resolved     _id: 'bcrypt@0.8.5',
+44 silly install resolved     _shasum: '8e5b81b4db80e944f440005979ca8d58a961861d',
+44 silly install resolved     _from: 'bcrypt@0.8.5',
+44 silly install resolved     _npmVersion: '2.13.3',
+44 silly install resolved     _nodeVersion: '3.0.0',
+44 silly install resolved     _npmUser: { name: 'defunctzombie', email: 'shtylman@gmail.com' },
+44 silly install resolved     dist:
+44 silly install resolved      { shasum: '8e5b81b4db80e944f440005979ca8d58a961861d',
+44 silly install resolved        tarball: 'http://registry.npmjs.org/bcrypt/-/bcrypt-0.8.5.tgz' },
+44 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object] ],
+44 silly install resolved     directories: {},
+44 silly install resolved     _resolved: 'https://registry.npmjs.org/bcrypt/-/bcrypt-0.8.5.tgz',
+44 silly install resolved     readme: 'ERROR: No README data found!' } ]
+45 info install bcrypt@0.8.5 into D:\GoogleDrive\Primary\PROJECT\NodeJs\login
+46 info installOne bcrypt@0.8.5
+47 verbose installOne of bcrypt to D:\GoogleDrive\Primary\PROJECT\NodeJs\login not in flight; installing
+48 verbose lock using C:\Users\Tuan\AppData\Roaming\npm-cache\_locks\bcrypt-449fda83752f358e.lock for D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\bcrypt
+49 silly install write writing bcrypt 0.8.5 to D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\bcrypt
+50 verbose unbuild node_modules\bcrypt
+51 silly gentlyRm D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\bcrypt is being purged from base D:\GoogleDrive\Primary\PROJECT\NodeJs\login
+52 verbose gentlyRm don't care about contents; nuking D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\bcrypt
+53 verbose tar unpack C:\Users\Tuan\AppData\Roaming\npm-cache\bcrypt\0.8.5\package.tgz
+54 verbose tar unpacking to D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\bcrypt
+55 silly gentlyRm D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\bcrypt is being purged
+56 verbose gentlyRm don't care about contents; nuking D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\bcrypt
+57 silly gunzTarPerm modes [ '777', '666' ]
+58 silly gunzTarPerm extractEntry package.json
+59 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+60 silly gunzTarPerm extractEntry .npmignore
+61 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+62 silly gunzTarPerm extractEntry README.md
+63 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+64 silly gunzTarPerm extractEntry LICENSE
+65 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+66 silly gunzTarPerm extractEntry bcrypt.js
+67 silly gunzTarPerm modified mode [ 'bcrypt.js', 420, 438 ]
+68 silly gunzTarPerm extractEntry binding.gyp
+69 silly gunzTarPerm modified mode [ 'binding.gyp', 420, 438 ]
+70 silly gunzTarPerm extractEntry .travis.yml
+71 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+72 silly gunzTarPerm extractEntry CHANGELOG.md
+73 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 420, 438 ]
+74 silly gunzTarPerm extractEntry examples/async_compare.js
+75 silly gunzTarPerm modified mode [ 'examples/async_compare.js', 420, 438 ]
+76 silly gunzTarPerm extractEntry examples/forever_gen_salt.js
+77 silly gunzTarPerm modified mode [ 'examples/forever_gen_salt.js', 420, 438 ]
+78 silly gunzTarPerm extractEntry test/async.js
+79 silly gunzTarPerm modified mode [ 'test/async.js', 420, 438 ]
+80 silly gunzTarPerm extractEntry test/repetitions.js
+81 silly gunzTarPerm modified mode [ 'test/repetitions.js', 420, 438 ]
+82 silly gunzTarPerm extractEntry test/sync.js
+83 silly gunzTarPerm modified mode [ 'test/sync.js', 420, 438 ]
+84 silly gunzTarPerm extractEntry Makefile
+85 silly gunzTarPerm modified mode [ 'Makefile', 420, 438 ]
+86 silly gunzTarPerm extractEntry src/bcrypt.cc
+87 silly gunzTarPerm modified mode [ 'src/bcrypt.cc', 420, 438 ]
+88 silly gunzTarPerm extractEntry src/bcrypt_node.cc
+89 silly gunzTarPerm modified mode [ 'src/bcrypt_node.cc', 420, 438 ]
+90 silly gunzTarPerm extractEntry src/blowfish.cc
+91 silly gunzTarPerm modified mode [ 'src/blowfish.cc', 420, 438 ]
+92 silly gunzTarPerm extractEntry src/node_blf.h
+93 silly gunzTarPerm modified mode [ 'src/node_blf.h', 420, 438 ]
+94 silly gunzTarPerm extractEntry werker.yml
+95 silly gunzTarPerm modified mode [ 'werker.yml', 420, 438 ]
+96 verbose write writing to D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\bcrypt\package.json
+97 info preinstall bcrypt@0.8.5
+98 verbose readDependencies loading dependencies from D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\bcrypt\package.json
+99 silly prepareForInstallMany adding bindings@1.2.1 from bcrypt dependencies
+100 silly prepareForInstallMany adding nan@2.0.5 from bcrypt dependencies
+101 verbose readDependencies loading dependencies from D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\bcrypt\package.json
+102 silly cache add args [ 'bindings@1.2.1', null ]
+103 verbose cache add spec bindings@1.2.1
+104 silly cache add args [ 'nan@2.0.5', null ]
+105 verbose cache add spec nan@2.0.5
+106 silly cache add parsed spec Result {
+106 silly cache add   raw: 'bindings@1.2.1',
+106 silly cache add   scope: null,
+106 silly cache add   name: 'bindings',
+106 silly cache add   rawSpec: '1.2.1',
+106 silly cache add   spec: '1.2.1',
+106 silly cache add   type: 'version' }
+107 silly addNamed bindings@1.2.1
+108 verbose addNamed "1.2.1" is a plain semver version for bindings
+109 silly mapToRegistry name bindings
+110 silly mapToRegistry using default registry
+111 silly mapToRegistry registry https://registry.npmjs.org/
+112 silly mapToRegistry uri https://registry.npmjs.org/bindings
+113 verbose addNameVersion registry:https://registry.npmjs.org/bindings not in flight; fetching
+114 silly cache add parsed spec Result {
+114 silly cache add   raw: 'nan@2.0.5',
+114 silly cache add   scope: null,
+114 silly cache add   name: 'nan',
+114 silly cache add   rawSpec: '2.0.5',
+114 silly cache add   spec: '2.0.5',
+114 silly cache add   type: 'version' }
+115 silly addNamed nan@2.0.5
+116 verbose addNamed "2.0.5" is a plain semver version for nan
+117 silly mapToRegistry name nan
+118 silly mapToRegistry using default registry
+119 silly mapToRegistry registry https://registry.npmjs.org/
+120 silly mapToRegistry uri https://registry.npmjs.org/nan
+121 verbose addNameVersion registry:https://registry.npmjs.org/nan not in flight; fetching
+122 verbose request uri https://registry.npmjs.org/bindings
+123 verbose request no auth needed
+124 info attempt registry request try #1 at 3:55:28 PM
+125 verbose etag "1LLBF9OH58DLBEL4629U6032D"
+126 http request GET https://registry.npmjs.org/bindings
+127 verbose request uri https://registry.npmjs.org/nan
+128 verbose request no auth needed
+129 info attempt registry request try #1 at 3:55:28 PM
+130 verbose etag "2UZKQOUIL0TMX4WY7FZ5Q5HJQ"
+131 http request GET https://registry.npmjs.org/nan
+132 http 304 https://registry.npmjs.org/bindings
+133 verbose headers { date: 'Wed, 06 Apr 2016 08:55:24 GMT',
+133 verbose headers   via: '1.1 varnish',
+133 verbose headers   'cache-control': 'max-age=300',
+133 verbose headers   etag: '"1LLBF9OH58DLBEL4629U6032D"',
+133 verbose headers   age: '39',
+133 verbose headers   connection: 'keep-alive',
+133 verbose headers   'x-served-by': 'cache-sjc3623-SJC',
+133 verbose headers   'x-cache': 'HIT',
+133 verbose headers   'x-cache-hits': '1',
+133 verbose headers   'x-timer': 'S1459932924.883075,VS0,VE0',
+133 verbose headers   vary: 'Accept' }
+134 silly get cb [ 304,
+134 silly get   { date: 'Wed, 06 Apr 2016 08:55:24 GMT',
+134 silly get     via: '1.1 varnish',
+134 silly get     'cache-control': 'max-age=300',
+134 silly get     etag: '"1LLBF9OH58DLBEL4629U6032D"',
+134 silly get     age: '39',
+134 silly get     connection: 'keep-alive',
+134 silly get     'x-served-by': 'cache-sjc3623-SJC',
+134 silly get     'x-cache': 'HIT',
+134 silly get     'x-cache-hits': '1',
+134 silly get     'x-timer': 'S1459932924.883075,VS0,VE0',
+134 silly get     vary: 'Accept' } ]
+135 verbose etag https://registry.npmjs.org/bindings from cache
+136 verbose get saving bindings to C:\Users\Tuan\AppData\Roaming\npm-cache\registry.npmjs.org\bindings\.cache.json
+137 http 200 https://registry.npmjs.org/nan
+138 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+138 verbose headers   etag: '"AMYO33W3HWPQSAR0OWT2GZRTB"',
+138 verbose headers   'content-type': 'application/json',
+138 verbose headers   'content-encoding': 'gzip',
+138 verbose headers   'cache-control': 'max-age=300',
+138 verbose headers   'content-length': '7932',
+138 verbose headers   'accept-ranges': 'bytes',
+138 verbose headers   date: 'Wed, 06 Apr 2016 08:55:24 GMT',
+138 verbose headers   via: '1.1 varnish',
+138 verbose headers   age: '46',
+138 verbose headers   connection: 'keep-alive',
+138 verbose headers   'x-served-by': 'cache-sjc3637-SJC',
+138 verbose headers   'x-cache': 'HIT',
+138 verbose headers   'x-cache-hits': '1',
+138 verbose headers   'x-timer': 'S1459932924.879720,VS0,VE0',
+138 verbose headers   vary: 'Accept-Encoding' }
+139 silly get cb [ 200,
+139 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+139 silly get     etag: '"AMYO33W3HWPQSAR0OWT2GZRTB"',
+139 silly get     'content-type': 'application/json',
+139 silly get     'content-encoding': 'gzip',
+139 silly get     'cache-control': 'max-age=300',
+139 silly get     'content-length': '7932',
+139 silly get     'accept-ranges': 'bytes',
+139 silly get     date: 'Wed, 06 Apr 2016 08:55:24 GMT',
+139 silly get     via: '1.1 varnish',
+139 silly get     age: '46',
+139 silly get     connection: 'keep-alive',
+139 silly get     'x-served-by': 'cache-sjc3637-SJC',
+139 silly get     'x-cache': 'HIT',
+139 silly get     'x-cache-hits': '1',
+139 silly get     'x-timer': 'S1459932924.879720,VS0,VE0',
+139 silly get     vary: 'Accept-Encoding' } ]
+140 verbose get saving nan to C:\Users\Tuan\AppData\Roaming\npm-cache\registry.npmjs.org\nan\.cache.json
+141 silly cache afterAdd bindings@1.2.1
+142 verbose afterAdd C:\Users\Tuan\AppData\Roaming\npm-cache\bindings\1.2.1\package\package.json not in flight; writing
+143 silly mapToRegistry name nan
+144 silly mapToRegistry using default registry
+145 silly mapToRegistry registry https://registry.npmjs.org/
+146 silly mapToRegistry uri https://registry.npmjs.org/nan
+147 verbose addRemoteTarball https://registry.npmjs.org/nan/-/nan-2.0.5.tgz not in flight; adding
+148 verbose addRemoteTarball [ 'https://registry.npmjs.org/nan/-/nan-2.0.5.tgz',
+148 verbose addRemoteTarball   '365888014be1fd178db0cbfa258edf7b0cb1c408' ]
+149 verbose afterAdd C:\Users\Tuan\AppData\Roaming\npm-cache\bindings\1.2.1\package\package.json written
+150 info retry fetch attempt 1 at 3:55:28 PM
+151 info attempt registry request try #1 at 3:55:28 PM
+152 http fetch GET https://registry.npmjs.org/nan/-/nan-2.0.5.tgz
+153 http fetch 200 https://registry.npmjs.org/nan/-/nan-2.0.5.tgz
+154 silly fetchAndShaCheck shasum 365888014be1fd178db0cbfa258edf7b0cb1c408
+155 verbose addTmpTarball C:\Users\Tuan\AppData\Local\Temp\npm-10004-dade3ef3\registry.npmjs.org\nan\-\nan-2.0.5.tgz not in flight; adding
+156 verbose addTmpTarball already have metadata; skipping unpack for nan@2.0.5
+157 silly cache afterAdd nan@2.0.5
+158 verbose afterAdd C:\Users\Tuan\AppData\Roaming\npm-cache\nan\2.0.5\package\package.json not in flight; writing
+159 verbose afterAdd C:\Users\Tuan\AppData\Roaming\npm-cache\nan\2.0.5\package\package.json written
+160 silly install resolved [ { name: 'bindings',
+160 silly install resolved     description: 'Helper module for loading your native module\'s .node file',
+160 silly install resolved     keywords: [ 'native', 'addon', 'bindings', 'gyp', 'waf', 'c', 'c++' ],
+160 silly install resolved     version: '1.2.1',
+160 silly install resolved     author:
+160 silly install resolved      { name: 'Nathan Rajlich',
+160 silly install resolved        email: 'nathan@tootallnate.net',
+160 silly install resolved        url: 'http://tootallnate.net' },
+160 silly install resolved     repository:
+160 silly install resolved      { type: 'git',
+160 silly install resolved        url: 'git://github.com/TooTallNate/node-bindings.git' },
+160 silly install resolved     main: './bindings.js',
+160 silly install resolved     bugs: { url: 'https://github.com/TooTallNate/node-bindings/issues' },
+160 silly install resolved     homepage: 'https://github.com/TooTallNate/node-bindings',
+160 silly install resolved     license: 'MIT',
+160 silly install resolved     gitHead: 'e404152ee27f8478ccbc7122ee051246e8e5ec02',
+160 silly install resolved     _id: 'bindings@1.2.1',
+160 silly install resolved     scripts: {},
+160 silly install resolved     _shasum: '14ad6113812d2d37d72e67b4cacb4bb726505f11',
+160 silly install resolved     _from: 'bindings@1.2.1',
+160 silly install resolved     _npmVersion: '1.4.14',
+160 silly install resolved     _npmUser: { name: 'tootallnate', email: 'nathan@tootallnate.net' },
+160 silly install resolved     maintainers: [ [Object], [Object] ],
+160 silly install resolved     dist:
+160 silly install resolved      { shasum: '14ad6113812d2d37d72e67b4cacb4bb726505f11',
+160 silly install resolved        tarball: 'http://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz' },
+160 silly install resolved     directories: {},
+160 silly install resolved     _resolved: 'https://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz',
+160 silly install resolved     readme: 'ERROR: No README data found!' },
+160 silly install resolved   { name: 'nan',
+160 silly install resolved     version: '2.0.5',
+160 silly install resolved     description: 'Native Abstractions for Node.js: C++ header for Node 0.8->0.12 compatibility',
+160 silly install resolved     main: 'include_dirs.js',
+160 silly install resolved     repository: { type: 'git', url: 'git://github.com/nodejs/nan.git' },
+160 silly install resolved     scripts:
+160 silly install resolved      { test: 'tap --gc test/js/*-test.js',
+160 silly install resolved        'rebuild-tests': 'pangyp rebuild --msvs_version=2013 --directory test',
+160 silly install resolved        docs: 'doc/.build.sh' },
+160 silly install resolved     contributors:
+160 silly install resolved      [ [Object],
+160 silly install resolved        [Object],
+160 silly install resolved        [Object],
+160 silly install resolved        [Object],
+160 silly install resolved        [Object],
+160 silly install resolved        [Object],
+160 silly install resolved        [Object] ],
+160 silly install resolved     devDependencies:
+160 silly install resolved      { bindings: '~1.2.1',
+160 silly install resolved        'node-gyp': '~2.0.2',
+160 silly install resolved        pangyp: '~2.2.0',
+160 silly install resolved        tap: '~0.7.1',
+160 silly install resolved        xtend: '~4.0.0' },
+160 silly install resolved     license: 'MIT',
+160 silly install resolved     gitHead: 'd13a2e9ce762fd130877b53c71d35963fa2cf689',
+160 silly install resolved     bugs: { url: 'https://github.com/nodejs/nan/issues' },
+160 silly install resolved     homepage: 'https://github.com/nodejs/nan#readme',
+160 silly install resolved     _id: 'nan@2.0.5',
+160 silly install resolved     _shasum: '365888014be1fd178db0cbfa258edf7b0cb1c408',
+160 silly install resolved     _from: 'nan@2.0.5',
+160 silly install resolved     _npmVersion: '2.13.3',
+160 silly install resolved     _nodeVersion: '3.0.0',
+160 silly install resolved     _npmUser: { name: 'kkoopa', email: 'bbyholm@abo.fi' },
+160 silly install resolved     maintainers: [ [Object], [Object] ],
+160 silly install resolved     dist:
+160 silly install resolved      { shasum: '365888014be1fd178db0cbfa258edf7b0cb1c408',
+160 silly install resolved        tarball: 'https://registry.npmjs.org/nan/-/nan-2.0.5.tgz' },
+160 silly install resolved     directories: {},
+160 silly install resolved     _resolved: 'https://registry.npmjs.org/nan/-/nan-2.0.5.tgz' } ]
+161 info install bindings@1.2.1 into D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\bcrypt
+162 info install nan@2.0.5 into D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\bcrypt
+163 info installOne bindings@1.2.1
+164 verbose installOne of bindings to D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\bcrypt not in flight; installing
+165 info installOne nan@2.0.5
+166 verbose installOne of nan to D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\bcrypt not in flight; installing
+167 verbose lock using C:\Users\Tuan\AppData\Roaming\npm-cache\_locks\bindings-7d1873f38d3e86f4.lock for D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\bcrypt\node_modules\bindings
+168 silly install write writing bindings 1.2.1 to D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\bcrypt\node_modules\bindings
+169 verbose lock using C:\Users\Tuan\AppData\Roaming\npm-cache\_locks\nan-7deb0ecb702967ab.lock for D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\bcrypt\node_modules\nan
+170 silly install write writing nan 2.0.5 to D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\bcrypt\node_modules\nan
+171 verbose unbuild node_modules\bcrypt\node_modules\bindings
+172 silly gentlyRm D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\bcrypt\node_modules\bindings is being purged from base D:\GoogleDrive\Primary\PROJECT\NodeJs\login
+173 verbose gentlyRm don't care about contents; nuking D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\bcrypt\node_modules\bindings
+174 verbose unbuild node_modules\bcrypt\node_modules\nan
+175 verbose tar unpack C:\Users\Tuan\AppData\Roaming\npm-cache\bindings\1.2.1\package.tgz
+176 verbose tar unpacking to D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\bcrypt\node_modules\bindings
+177 silly gentlyRm D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\bcrypt\node_modules\bindings is being purged
+178 verbose gentlyRm don't care about contents; nuking D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\bcrypt\node_modules\bindings
+179 silly gunzTarPerm modes [ '777', '666' ]
+180 silly gentlyRm D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\bcrypt\node_modules\nan is being purged from base D:\GoogleDrive\Primary\PROJECT\NodeJs\login
+181 verbose gentlyRm don't care about contents; nuking D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\bcrypt\node_modules\nan
+182 verbose tar unpack C:\Users\Tuan\AppData\Roaming\npm-cache\nan\2.0.5\package.tgz
+183 verbose tar unpacking to D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\bcrypt\node_modules\nan
+184 silly gentlyRm D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\bcrypt\node_modules\nan is being purged
+185 verbose gentlyRm don't care about contents; nuking D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\bcrypt\node_modules\nan
+186 silly gunzTarPerm modes [ '777', '666' ]
+187 silly gunzTarPerm extractEntry package.json
+188 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+189 silly gunzTarPerm extractEntry package.json
+190 silly gunzTarPerm modified mode [ 'package.json', 436, 438 ]
+191 silly gunzTarPerm extractEntry README.md
+192 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+193 silly gunzTarPerm extractEntry bindings.js
+194 silly gunzTarPerm modified mode [ 'bindings.js', 420, 438 ]
+195 silly gunzTarPerm extractEntry README.md
+196 silly gunzTarPerm modified mode [ 'README.md', 436, 438 ]
+197 silly gunzTarPerm extractEntry include_dirs.js
+198 silly gunzTarPerm modified mode [ 'include_dirs.js', 436, 438 ]
+199 silly gunzTarPerm extractEntry nan_converters.h
+200 silly gunzTarPerm modified mode [ 'nan_converters.h', 436, 438 ]
+201 silly gunzTarPerm extractEntry LICENSE.md
+202 silly gunzTarPerm modified mode [ 'LICENSE.md', 436, 438 ]
+203 silly gunzTarPerm extractEntry .dntrc
+204 silly gunzTarPerm modified mode [ '.dntrc', 436, 438 ]
+205 silly gunzTarPerm extractEntry appveyor.yml
+206 silly gunzTarPerm modified mode [ 'appveyor.yml', 436, 438 ]
+207 verbose write writing to D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\bcrypt\node_modules\bindings\package.json
+208 silly gunzTarPerm extractEntry doc/new.md
+209 silly gunzTarPerm modified mode [ 'doc/new.md', 436, 438 ]
+210 silly gunzTarPerm extractEntry doc/.build.sh
+211 silly gunzTarPerm modified mode [ 'doc/.build.sh', 509, 511 ]
+212 info preinstall bindings@1.2.1
+213 verbose readDependencies loading dependencies from D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\bcrypt\node_modules\bindings\package.json
+214 silly gunzTarPerm extractEntry doc/buffers.md
+215 silly gunzTarPerm modified mode [ 'doc/buffers.md', 436, 438 ]
+216 silly gunzTarPerm extractEntry doc/callback.md
+217 silly gunzTarPerm modified mode [ 'doc/callback.md', 436, 438 ]
+218 verbose readDependencies loading dependencies from D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\bcrypt\node_modules\bindings\package.json
+219 silly install resolved []
+220 verbose about to build D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\bcrypt\node_modules\bindings
+221 info build D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\bcrypt\node_modules\bindings
+222 info linkStuff bindings@1.2.1
+223 silly linkStuff bindings@1.2.1 has D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\bcrypt\node_modules as its parent node_modules
+224 silly gunzTarPerm extractEntry doc/converters.md
+225 silly gunzTarPerm modified mode [ 'doc/converters.md', 436, 438 ]
+226 silly gunzTarPerm extractEntry doc/errors.md
+227 silly gunzTarPerm modified mode [ 'doc/errors.md', 436, 438 ]
+228 verbose linkBins bindings@1.2.1
+229 verbose linkMans bindings@1.2.1
+230 verbose rebuildBundles bindings@1.2.1
+231 info install bindings@1.2.1
+232 info postinstall bindings@1.2.1
+233 silly gunzTarPerm extractEntry doc/maybe_types.md
+234 silly gunzTarPerm modified mode [ 'doc/maybe_types.md', 436, 438 ]
+235 silly gunzTarPerm extractEntry doc/methods.md
+236 silly gunzTarPerm modified mode [ 'doc/methods.md', 436, 438 ]
+237 verbose unlock done using C:\Users\Tuan\AppData\Roaming\npm-cache\_locks\bindings-7d1873f38d3e86f4.lock for D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\bcrypt\node_modules\bindings
+238 silly gunzTarPerm extractEntry doc/asyncworker.md
+239 silly gunzTarPerm modified mode [ 'doc/asyncworker.md', 436, 438 ]
+240 silly gunzTarPerm extractEntry doc/node_misc.md
+241 silly gunzTarPerm modified mode [ 'doc/node_misc.md', 436, 438 ]
+242 silly gunzTarPerm extractEntry doc/persistent.md
+243 silly gunzTarPerm modified mode [ 'doc/persistent.md', 436, 438 ]
+244 silly gunzTarPerm extractEntry doc/scopes.md
+245 silly gunzTarPerm modified mode [ 'doc/scopes.md', 436, 438 ]
+246 silly gunzTarPerm extractEntry doc/script.md
+247 silly gunzTarPerm modified mode [ 'doc/script.md', 436, 438 ]
+248 silly gunzTarPerm extractEntry doc/string_bytes.md
+249 silly gunzTarPerm modified mode [ 'doc/string_bytes.md', 436, 438 ]
+250 silly gunzTarPerm extractEntry doc/v8_internals.md
+251 silly gunzTarPerm modified mode [ 'doc/v8_internals.md', 436, 438 ]
+252 silly gunzTarPerm extractEntry doc/v8_misc.md
+253 silly gunzTarPerm modified mode [ 'doc/v8_misc.md', 436, 438 ]
+254 silly gunzTarPerm extractEntry nan.h
+255 silly gunzTarPerm modified mode [ 'nan.h', 436, 438 ]
+256 silly gunzTarPerm extractEntry nan_callbacks.h
+257 silly gunzTarPerm modified mode [ 'nan_callbacks.h', 436, 438 ]
+258 silly gunzTarPerm extractEntry nan_callbacks_12_inl.h
+259 silly gunzTarPerm modified mode [ 'nan_callbacks_12_inl.h', 436, 438 ]
+260 silly gunzTarPerm extractEntry nan_callbacks_pre_12_inl.h
+261 silly gunzTarPerm modified mode [ 'nan_callbacks_pre_12_inl.h', 436, 438 ]
+262 silly gunzTarPerm extractEntry nan_converters_43_inl.h
+263 silly gunzTarPerm modified mode [ 'nan_converters_43_inl.h', 436, 438 ]
+264 silly gunzTarPerm extractEntry nan_converters_pre_43_inl.h
+265 silly gunzTarPerm modified mode [ 'nan_converters_pre_43_inl.h', 436, 438 ]
+266 silly gunzTarPerm extractEntry nan_implementation_12_inl.h
+267 silly gunzTarPerm modified mode [ 'nan_implementation_12_inl.h', 436, 438 ]
+268 silly gunzTarPerm extractEntry nan_implementation_pre_12_inl.h
+269 silly gunzTarPerm modified mode [ 'nan_implementation_pre_12_inl.h', 436, 438 ]
+270 silly gunzTarPerm extractEntry nan_maybe_43_inl.h
+271 silly gunzTarPerm modified mode [ 'nan_maybe_43_inl.h', 436, 438 ]
+272 silly gunzTarPerm extractEntry nan_maybe_pre_43_inl.h
+273 silly gunzTarPerm modified mode [ 'nan_maybe_pre_43_inl.h', 436, 438 ]
+274 silly gunzTarPerm extractEntry nan_new.h
+275 silly gunzTarPerm modified mode [ 'nan_new.h', 436, 438 ]
+276 silly gunzTarPerm extractEntry nan_object_wrap.h
+277 silly gunzTarPerm modified mode [ 'nan_object_wrap.h', 436, 438 ]
+278 silly gunzTarPerm extractEntry nan_persistent_12_inl.h
+279 silly gunzTarPerm modified mode [ 'nan_persistent_12_inl.h', 436, 438 ]
+280 silly gunzTarPerm extractEntry nan_persistent_pre_12_inl.h
+281 silly gunzTarPerm modified mode [ 'nan_persistent_pre_12_inl.h', 436, 438 ]
+282 silly gunzTarPerm extractEntry nan_string_bytes.h
+283 silly gunzTarPerm modified mode [ 'nan_string_bytes.h', 436, 438 ]
+284 silly gunzTarPerm extractEntry nan_weak.h
+285 silly gunzTarPerm modified mode [ 'nan_weak.h', 436, 438 ]
+286 silly gunzTarPerm extractEntry CHANGELOG.md
+287 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 438 ]
+288 silly gunzTarPerm extractEntry tools/package.json
+289 silly gunzTarPerm modified mode [ 'tools/package.json', 436, 438 ]
+290 silly gunzTarPerm extractEntry tools/README.md
+291 silly gunzTarPerm modified mode [ 'tools/README.md', 436, 438 ]
+292 silly gunzTarPerm extractEntry tools/1to2.js
+293 silly gunzTarPerm modified mode [ 'tools/1to2.js', 509, 511 ]
+294 verbose write writing to D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\bcrypt\node_modules\nan\package.json
+295 info preinstall nan@2.0.5
+296 verbose readDependencies loading dependencies from D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\bcrypt\node_modules\nan\package.json
+297 verbose readDependencies loading dependencies from D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\bcrypt\node_modules\nan\package.json
+298 silly install resolved []
+299 verbose about to build D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\bcrypt\node_modules\nan
+300 info build D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\bcrypt\node_modules\nan
+301 info linkStuff nan@2.0.5
+302 silly linkStuff nan@2.0.5 has D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\bcrypt\node_modules as its parent node_modules
+303 verbose linkBins nan@2.0.5
+304 verbose linkMans nan@2.0.5
+305 verbose rebuildBundles nan@2.0.5
+306 info install nan@2.0.5
+307 info postinstall nan@2.0.5
+308 verbose unlock done using C:\Users\Tuan\AppData\Roaming\npm-cache\_locks\nan-7deb0ecb702967ab.lock for D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\bcrypt\node_modules\nan
+309 verbose about to build D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\bcrypt
+310 info build D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\bcrypt
+311 info linkStuff bcrypt@0.8.5
+312 silly linkStuff bcrypt@0.8.5 has D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules as its parent node_modules
+313 verbose linkBins bcrypt@0.8.5
+314 verbose linkMans bcrypt@0.8.5
+315 verbose rebuildBundles bcrypt@0.8.5
+316 verbose rebuildBundles [ 'bindings', 'nan' ]
+317 info install bcrypt@0.8.5
+318 verbose unsafe-perm in lifecycle true
+319 info bcrypt@0.8.5 Failed to exec install script
+320 verbose unlock done using C:\Users\Tuan\AppData\Roaming\npm-cache\_locks\bcrypt-449fda83752f358e.lock for D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\bcrypt
+321 verbose stack Error: bcrypt@0.8.5 install: `node-gyp rebuild`
+321 verbose stack Exit status 1
+321 verbose stack     at EventEmitter.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\lifecycle.js:214:16)
+321 verbose stack     at emitTwo (events.js:87:13)
+321 verbose stack     at EventEmitter.emit (events.js:172:7)
+321 verbose stack     at ChildProcess.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\spawn.js:24:14)
+321 verbose stack     at emitTwo (events.js:87:13)
+321 verbose stack     at ChildProcess.emit (events.js:172:7)
+321 verbose stack     at maybeClose (internal/child_process.js:821:16)
+321 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+322 verbose pkgid bcrypt@0.8.5
+323 verbose cwd D:\GoogleDrive\Primary\PROJECT\NodeJs\login
+324 error Windows_NT 10.0.10586
+325 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "bcrypt"
+326 error node v4.3.1
+327 error npm  v2.14.12
+328 error code ELIFECYCLE
+329 error bcrypt@0.8.5 install: `node-gyp rebuild`
+329 error Exit status 1
+330 error Failed at the bcrypt@0.8.5 install script 'node-gyp rebuild'.
+330 error This is most likely a problem with the bcrypt package,
+330 error not with npm itself.
+330 error Tell the author that this fails on your system:
+330 error     node-gyp rebuild
+330 error You can get their info via:
+330 error     npm owner ls bcrypt
+330 error There is likely additional logging output above.
+331 verbose exit [ 1, true ]
+332 verbose unbuild node_modules\bcrypt
+333 info preuninstall bcrypt@0.8.5
+334 info uninstall bcrypt@0.8.5
+335 verbose unbuild rmStuff bcrypt@0.8.5 from D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules
+336 info postuninstall bcrypt@0.8.5
+337 silly gentlyRm D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\bcrypt is being purged from base D:\GoogleDrive\Primary\PROJECT\NodeJs\login
+338 verbose gentlyRm don't care about contents; nuking D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\bcrypt
+339 silly vacuum-fs purging D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules\bcrypt
+340 silly vacuum-fs quitting because other entries in D:\GoogleDrive\Primary\PROJECT\NodeJs\login\node_modules

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html" charset="UTF-8">
+    <script src="http://127.0.0.1:3000/socket.io/socket.io.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script language="JavaScript">
+        var firstuser = 0;
+        var userString="";
+        function load_ajax(){
+
+            $.ajax({
+                url : '/users/loadmore',         //duong dan can goi den
+                type: 'GET',                   //kieu cua request len server
+                cache: false,
+                data: {
+                    loadform : firstuser
+                },
+                success:                    //ham sau khi request thanh cong
+                        function(result){
+                            alert("Gui thanh cong !");
+                            if(result.length)
+                            {
+                                userString+=result;
+                                $('#result').html(userString);
+                            }
+
+                        }
+            });
+            firstuser += 5;
+        }
+        $(document).ready(function(){
+            var socket = io.connect('http://127.0.0.1:3000');
+            socket.emit('NewConnect',document.cookie);
+            socket.on('access',function(data){
+                alert(data);
+            });
+            $('#go').click(function(){
+                socket.emit('NewConnect',document.cookie);
+                alert(document.cookie);
+            })
+            socket.on('CheckUserStatus',function(data){
+                //alert(data);
+                //Hien thi data chuoi danh sach cac user online
+                //$('#result').html(data);
+                if($('#user').html() != "no one"){
+                    socket.emit('return_from_online_user',$('#user').html());
+                }
+            });
+            window.onbeforeunload = function(){
+                socket.emit('CloseConnect',document.cookie);
+            }
+        })
+
+
+
+    </script>
+    <title>Title</title>
+</head>
+<body>
+
+<h1>what is your name ?</h1>
+<input type="text" id="name"/>
+<button id="go">Go</button>
+<div id="result">
+    Data load here :
+</div>
+<input type="button" name="clickme" id="clickme" onclick="load_ajax()" value="clickme" />
+
+</body>
+</html>
